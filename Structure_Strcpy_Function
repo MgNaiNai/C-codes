@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+void data_output(struct Student_data hd);
+
+struct Student_data{
+
+    char name[20];
+    char f_Name[20];
+    int age;
+
+};
+
+int main(){
+    struct Student_data data1;
+    struct Student_data data2;
+    struct Student_data data3;
+    struct Student_data data4;
+
+    strcpy(data1.name , "Justin Htoo");
+    strcpy(data1.f_Name , "Justin");
+    data1.age=15;
+
+
+    strcpy(data2.name , "Dave Austin");
+    strcpy(data2.f_Name , "Dave");
+    data2.age=16;
+
+
+    strcpy(data3.name , "Noval Zaw");
+    strcpy(data3.f_Name , "Noval");
+    data3.age=14;
+
+
+    strcpy(data4.name , "Joez Tun");
+    strcpy(data4.f_Name , "Joez");
+    data4.age=16;
+
+    data_output(data1);
+    data_output(data2);
+    data_output(data3);
+
+    return 0;
+}
+
+void data_output(struct Student_data hd){
+
+    printf("Name: %s\n",hd.name);
+    printf("Father name: %s\n",hd.f_Name);
+    printf("Student Age: %d\n",hd.age);
+    printf("\n");A
+}
+
