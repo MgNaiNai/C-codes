@@ -45,9 +45,9 @@ int main(){
                             //pointer sign(*)
 void data_output(struct Student_data *hd){
 
-    printf("Name: %s\n",hd->name);          //arrow pointer(->)
-    printf("Father name: %s\n",hd->f_Name); //arrow pointer(->)
-    printf("Student Age: %d\n",hd->age);    //arrow pointer(->)
+    printf("Name: %s\n",hd->name);          //arrow operator(->)
+    printf("Father name: %s\n",hd->f_Name); //arrow operator(->)
+    printf("Student Age: %d\n",hd->age);    //arrow operator(->)
     printf("\n");
 }
 
