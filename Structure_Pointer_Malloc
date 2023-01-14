@@ -1,0 +1,32 @@
+#include "stdio.h"
+#include "stdlib.h"
+#include "string.h"
+
+struct students_info{
+
+    char *name;
+    char *address;
+    char *father_name;
+
+};
+
+int main(){
+
+
+    struct students_info *student;
+
+    student=(struct students_info*)malloc(sizeof(struct students_info));
+
+    student->name="joejoe";
+    student->father_name="joejoeFather";
+    student->address="Insein";
+
+    printf("Student name is %s\n",student->name);
+    printf("Father name is %s\n",student->father_name);
+    printf("Address is %s\n",student->address);
+
+
+    return 0;
+}
+
+
